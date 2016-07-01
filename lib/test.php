@@ -33,7 +33,7 @@ class core_php_time_limit {
      */
     protected static $currentend = -1;
 
-    /**
+    /** CHANGE 1
      * @var array Data for unit testing
      */
     protected static $unittestdata = array();
