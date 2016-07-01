@@ -94,7 +94,7 @@ class core_php_time_limit {
             // Existing time limit is already longer, so do nothing.
             return;
         }
-
+        // Change 3
         // Set time limit and update current value.
         @set_time_limit($newlimit);
         self::$currentend = $newend;
