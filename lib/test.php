@@ -66,7 +66,7 @@ class core_php_time_limit {
         if (self::$currentend === 0 || CLI_SCRIPT) {
             return;
         }
-
+        // CHANGE 2
         // Maximum time limit can be set in config. This can be useful for front-end
         // server systems; if the front-end server has a timeout without receiving
         // data, it's helpful to set this timeout lower to ensure that a suitable
@@ -94,7 +94,7 @@ class core_php_time_limit {
             // Existing time limit is already longer, so do nothing.
             return;
         }
-
+        // Change 3
         // Set time limit and update current value.
         @set_time_limit($newlimit);
         self::$currentend = $newend;
